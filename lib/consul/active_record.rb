@@ -15,5 +15,6 @@ module Consul
 end
 
 ActiveSupport.on_load :active_record do
+  puts "HERE WE ARE"
   extend Consul::ActiveRecord
 end
