@@ -15,6 +15,6 @@ module Consul
 end
 
 ActiveSupport.on_load :active_record do
-  puts "HERE WE ARE"
+  binding.pry
   extend Consul::ActiveRecord
 end
