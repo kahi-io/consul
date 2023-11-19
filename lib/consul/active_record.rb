@@ -15,6 +15,5 @@ module Consul
 end
 
 ActiveSupport.on_load :active_record do
-  binding.pry
   extend Consul::ActiveRecord
 end
